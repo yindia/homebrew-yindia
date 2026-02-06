@@ -12,9 +12,9 @@ This is the Homebrew tap for `yindia/homebrew-yindia`, providing installation fo
 
 | Formula   | Description | Tool URL | Install Command |
 |----------|-------------|----------|----------------|
-| snip     | SNIP - Search, Navigate, Index, Parse | `https://github.com/yindia/snip` | `brew install yindia/yindia/snip` |
-| rootcause| RootCause is a local-first MCP server that helps operators manage Kubernetes resources and identify the real root cause of failures through interoperable toolsets. | `https://github.com/yindia/rootcause` | `brew install yindia/yindia/rootcause` |
-| pltf     | The next generation of Infrastructure-as-Code. Work with high-level constructs instead of getting lost in low-level cloud configuration. | `https://github.com/yindia/pltf` | `brew install yindia/yindia/pltf` |
+| snip     | SNIP - Search, Navigate, Index, Parse | `https://github.com/yindia/snip` | `brew install yindia/homebrew-yindia/snip` |
+| rootcause| RootCause is a local-first MCP server that helps operators manage Kubernetes resources and identify the real root cause of failures through interoperable toolsets. | `https://github.com/yindia/rootcause` | `brew install yindia/homebrew-yindia/rootcause` |
+| pltf     | The next generation of Infrastructure-as-Code. Work with high-level constructs instead of getting lost in low-level cloud configuration. | `https://github.com/yindia/pltf` | `brew install yindia/homebrew-yindia/pltf` |
 
 Note: add `Formula/pltf.rb` to publish the pltf formula in this tap.
 
@@ -25,7 +25,7 @@ Note: add `Formula/pltf.rb` to publish the pltf formula in this tap.
 ### 1. Add this tap
 
 ```bash
-brew tap yindia/yindia
+brew tap yindia/homebrew-yindia
 ```
 
 ### 2. Install tools
@@ -33,9 +33,9 @@ brew tap yindia/yindia
 Install individual tools:
 
 ```bash
-brew install yindia/yindia/snip
-brew install yindia/yindia/rootcause
-brew install yindia/yindia/pltf
+brew install yindia/homebrew-yindia/snip
+brew install yindia/homebrew-yindia/rootcause
+brew install yindia/homebrew-yindia/pltf
 ```
 
 Or install all:
@@ -66,7 +66,8 @@ brew upgrade snip
 ```
 .
 ├── Formula/
-│   ├── snip.rb
+│   ├── pltf.rb
+│   └── snip.rb
 │   └── rootcause.rb
 └── README.md
 ```
@@ -96,5 +97,5 @@ brew upgrade
 
 ```bash
 brew tap
-brew search yindia/yindia
+brew search yindia/homebrew-yindia
 ```
