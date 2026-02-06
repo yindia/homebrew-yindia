@@ -5,21 +5,21 @@
 class Rootcause < Formula
   desc "RootCause is a local-first MCP server that helps operators manage Kubernetes resources and identify the real root cause of failures through interoperable toolsets."
   homepage "https://github.com/yindia/rootcause"
-  version "0.0.2"
+  version "0.0.3"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/yindia/rootcause/releases/download/v0.0.2/rootcause_0.0.2_darwin_amd64.tar.gz"
-      sha256 "34a2b7c657eabcca1b976e9045fda323d2d158c39a7b4fc1cc75d08506259337"
+      url "https://github.com/yindia/rootcause/releases/download/v0.0.3/rootcause_0.0.3_darwin_amd64.tar.gz"
+      sha256 "8789ba24bf269af8d0e486427be8de2d41e76504afe9da66ec1a7acf96267aca"
 
       def install
         bin.install "rootcause"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/yindia/rootcause/releases/download/v0.0.2/rootcause_0.0.2_darwin_arm64.tar.gz"
-      sha256 "5ce5bba3153f0ac5fce80c78cfd8116a2fc2f53e94b8ad61301c9786e7095049"
+      url "https://github.com/yindia/rootcause/releases/download/v0.0.3/rootcause_0.0.3_darwin_arm64.tar.gz"
+      sha256 "41621a29ce839d83c1900b7bd2a7f2e4a0de52ffd2d9ddd3089e01a78214ce94"
 
       def install
         bin.install "rootcause"
@@ -29,15 +29,15 @@ class Rootcause < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/yindia/rootcause/releases/download/v0.0.2/rootcause_0.0.2_linux_amd64.tar.gz"
-      sha256 "ff229f6ee3f91904438a9076d11ed852347c19f3ba57cf181d8c81f968bbffea"
+      url "https://github.com/yindia/rootcause/releases/download/v0.0.3/rootcause_0.0.3_linux_amd64.tar.gz"
+      sha256 "17299396ea2b2969eff1b9ea2c7eca5c831e48661007aff20c0d6c39e68bba7a"
       def install
         bin.install "rootcause"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/yindia/rootcause/releases/download/v0.0.2/rootcause_0.0.2_linux_arm64.tar.gz"
-      sha256 "4bf3c186a35fe1a11dd3d2b25587967a5f9ed937c072a6e41eddcf30d3cc8449"
+      url "https://github.com/yindia/rootcause/releases/download/v0.0.3/rootcause_0.0.3_linux_arm64.tar.gz"
+      sha256 "59920835fd0292bbe2d8a019964cdb5d3958fb791186b6b316c667ff3dd72b61"
       def install
         bin.install "rootcause"
       end
