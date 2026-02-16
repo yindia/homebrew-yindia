@@ -5,21 +5,21 @@
 class Githook < Formula
   desc "Webhook router + worker SDK for GitHub, GitLab, Bitbucket. Route events by rules and consume via Watermill."
   homepage "https://github.com/yindia/githook"
-  version "0.0.2"
+  version "0.0.3"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/yindia/githook/releases/download/v0.0.2/githook_0.0.2_darwin_amd64.tar.gz"
-      sha256 "c1e68825034760cf14fe2afed484f8e12e3e3691261d1cc31aeaa21d22781a5b"
+      url "https://github.com/yindia/githook/releases/download/v0.0.3/githook_0.0.3_darwin_amd64.tar.gz"
+      sha256 "4fa4f98149ede1c9d06740aab8ada297f990f3293005e71e63941273cecbc751"
 
       def install
         bin.install "githook"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/yindia/githook/releases/download/v0.0.2/githook_0.0.2_darwin_arm64.tar.gz"
-      sha256 "4e09cf8ede3829798441c0f51693ac84c1319b11aaa080147e56f8fd9725ae81"
+      url "https://github.com/yindia/githook/releases/download/v0.0.3/githook_0.0.3_darwin_arm64.tar.gz"
+      sha256 "6f3f214b35e367ac88b122b1626a053b8d096db6b8408d1232137f761b33af8f"
 
       def install
         bin.install "githook"
@@ -29,15 +29,15 @@ class Githook < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/yindia/githook/releases/download/v0.0.2/githook_0.0.2_linux_amd64.tar.gz"
-      sha256 "4ae4a6747b2fe52169395802a6c97b4bd34577a2623fc102856eb961d9a1cb93"
+      url "https://github.com/yindia/githook/releases/download/v0.0.3/githook_0.0.3_linux_amd64.tar.gz"
+      sha256 "e1383e4362a48aa1f21c240431c6c175d9a1961da3aeedb2a2efe308dc58d5d0"
       def install
         bin.install "githook"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/yindia/githook/releases/download/v0.0.2/githook_0.0.2_linux_arm64.tar.gz"
-      sha256 "ddbb5849f9f96373b922586e6a1edc99f878a94b6a985281e82156ad1ff7645f"
+      url "https://github.com/yindia/githook/releases/download/v0.0.3/githook_0.0.3_linux_arm64.tar.gz"
+      sha256 "94d901a421cf26fa6756a5fc23ae14fe00a32b8c728edd0a3d683a9cc59a1b8e"
       def install
         bin.install "githook"
       end
